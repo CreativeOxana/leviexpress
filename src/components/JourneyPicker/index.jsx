@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { HomePage } from '../../pages/HomePage';
 import './style.css';
 
 const CityOptions = (props) => {
@@ -28,7 +27,7 @@ const DatesOptions = (props) => {
       {props.dates.map((date) => {
         return (
           <option key={date.dateBasic} value={date.dateBasic}>
-            {date.dateBasic}
+            {date.dateCs}
           </option>
         );
       })}
